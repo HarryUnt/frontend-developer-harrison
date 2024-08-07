@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+        p::first-letter{
+            color: goldenrod;
+        }
+        p::before{
+            content: "👍";
+        }
+        p::after{
+            content: "🏫";
+        }
+        p:hover{
+            color: blue;
+        }
+        div p:nth-child(2){
+            color: green;
+        }
+        ::placeholder{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>The best</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
